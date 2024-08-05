@@ -220,22 +220,6 @@ function setupEventListeners() {
 
 // Setup button listeners
 function setupButtonListeners() {
-  $('#cityBtn').on('click', function() {
-    loadCities(map, citiesLayer); // Using imported function
-  });
-
-  $('#airportBtn').on('click', function() {
-    loadAirports(map, airportsLayer); // Using imported function
-  });
-
-  $('#universityBtn').on('click', function() {
-    loadUniversities(map, universitiesLayer); // Assuming similar function exists
-  });
-
-  $('#footballStadiumBtn').on('click', function() {
-    loadFootballStadiums(map, footballStadiumsLayer); // Assuming similar function exists
-  });
-
   $('#wikiBtn').on('click', function() {
     const selectedCountry = $('#countrySelect').val();
     if (selectedCountry) {
